@@ -53,7 +53,7 @@ fi
 
 # Start Docker containers
 echo -e "${GREEN}Starting Docker containers...${NC}"
-docker compose -f $COMPOSE_FILE up -d
+docker-compose -f $COMPOSE_FILE up -d
 
 # Display access instructions
 if [ "$DEV_MODE" = true ]; then
