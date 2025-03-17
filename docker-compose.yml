@@ -1,7 +1,7 @@
 ---
 services:
   api: &api-environment
-    image: jhumanj/opnform-api:latest
+    image: jiayuanw/forms-liberal-run-api:latest
     container_name: opnform-api
     build: &api-build
       context: .
@@ -63,7 +63,7 @@ services:
       - ./api/.env
 
   ui:
-    image: jhumanj/opnform-client:latest
+    image: jiayuanw/forms-liberal-run-ui:latest
     container_name: opnform-client
     build:
       context: .
