@@ -7,8 +7,7 @@
       <h2
         class="mb-6 font-sans text-4xl font-semibold leading-none tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl md:mx-auto"
       >
-        The easiest way to create forms. <br>
-        Generous unlimited <span class="text-nt-blue">free plan.</span>
+        The easiest way to <span class="text-nt-red">create forms.</span>
       </h2>
       <p class="text-base text-gray-700 dark:text-gray-300 md:text-lg">
         Need a contact form? Doing a survey? Create a form in 2 minutes and
@@ -233,7 +232,7 @@
           Customize Everything
         </h3>
         <p>
-          Change form themes, change texts, colors, add images, add custom thank
+          Change form themes, change texts, colours, add images, add custom thank
           you pages and much more.
         </p>
       </div>

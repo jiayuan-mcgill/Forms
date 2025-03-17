@@ -170,10 +170,10 @@
           <features class="pb-8" />
         </div>
       </div>
+<!-- 
+      <ai-feature class="bg-white -mb-56" /> -->
 
-      <ai-feature class="bg-white -mb-56" />
-
-      <more-features class="pt-56" />
+      <more-features class="pt-10" />
 
       <pricing-table
         v-if="useFeatureFlag('billing.enabled')"
@@ -203,14 +203,32 @@
 
       <templates-slider class="max-w-full mb-12" />
 
-      <div class="w-full bg-blue-900 p-12 md:p-24 text-center">
+      <div class="w-full bg-red-600 p-12 md:p-24 text-center">
         <h4 class="font-semibold text-3xl text-white">
           Take your forms to the next level
         </h4>
         <p class="text-gray-300 my-8">
-          Generous, unlimited free plan.
+          Team Canada
         </p>
         <div class="mt-6 flex justify-center">
+            <v-button
+              v-if="!authenticated"
+              class="mr-1"
+              :to="{ name: 'login' }"
+              :arrow="true"
+            >
+              Login
+            </v-button>
+            <v-button
+              v-else
+              class="mr-1"
+              :to="{ name: 'forms-create' }"
+              :arrow="true"
+            >
+              Create a form
+            </v-button>
+          </div>
+        <!-- <div class="mt-6 flex justify-center">
           <v-button
             v-track.welcome_create_form_click
             :to="{ name: 'forms-create-guest' }"
@@ -219,8 +237,8 @@
           >
             Create a form for FREE
           </v-button>
-        </div>
-        <div class="flex justify-center mt-6">
+        </div> -->
+        <!-- <div class="flex justify-center mt-6">
           <a
             target="_blank"
             :href="configLinks.twitter"
@@ -276,8 +294,8 @@
               />
             </svg>
           </a>
-        </div>
-
+        </div> -->
+        <!-- 
         <p class="mt-12 text-white text-lg">
           The form below is an OpnForm, give it a try !
         </p>
@@ -290,7 +308,7 @@
             height="480px"
             src="https://opnform.com/forms/opnform-contact"
           />
-        </div>
+        </div> -->
       </div>
 
       <open-form-footer class="dark:border-t border-t" />
@@ -304,7 +322,7 @@ import { useAuthStore } from "../stores/auth"
 import Features from "~/components/pages/welcome/Features.vue"
 import MoreFeatures from "~/components/pages/welcome/MoreFeatures.vue"
 import PricingTable from "../components/pages/pricing/PricingTable.vue"
-import AiFeature from "~/components/pages/welcome/AiFeature.vue"
+// import AiFeature from "~/components/pages/welcome/AiFeature.vue"
 import TemplatesSlider from "../components/pages/welcome/TemplatesSlider.vue"
 import opnformConfig from "~/opnform.config.js"
 
@@ -313,7 +331,7 @@ export default {
     Features,
     MoreFeatures,
     PricingTable,
-    AiFeature,
+    // AiFeature,
     TemplatesSlider,
   },
   layout: "default",
