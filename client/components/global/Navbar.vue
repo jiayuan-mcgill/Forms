@@ -6,8 +6,10 @@
     <div class="max-w-7xl mx-auto px-8">
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center">
+          <!-- JWedited NuxtLink from index to login -->
           <NuxtLink
-            :to="{ name: user ? 'home' : 'index' }"
+            :to="{ name: user ? 'home' : 'login' }" 
+            
             class="flex-shrink-0 font-semibold hover:no-underline flex items-center"
           >
             <img
@@ -17,7 +19,7 @@
             >
             <span
               class="ml-2 text-md hidden sm:inline text-black dark:text-white"
-            >OpnForm</span>
+            >forms.Liberal.run</span>
           </NuxtLink>
           <workspace-dropdown class="ml-6" />
         </div>
@@ -32,7 +34,7 @@
           >
             Templates
           </NuxtLink>
-          <template v-if="appStore.featureBaseEnabled">
+          <!-- <template v-if="appStore.featureBaseEnabled">
             <button
               v-if="user"
               :class="navLinkClasses"
@@ -52,16 +54,16 @@
             >
               What's new?
             </a>
-          </template>
-          <NuxtLink
+          </template> -->
+          <!-- <NuxtLink
             v-if="($route.name !== 'ai-form-builder' && user === null) && (!useFeatureFlag('self_hosted') || useFeatureFlag('ai_features'))"
             :to="{ name: 'ai-form-builder' }"
             :class="navLinkClasses"
             class="hidden lg:inline"
           >
             AI Form Builder
-          </NuxtLink>
-          <NuxtLink
+          </NuxtLink> -->
+          <!-- <NuxtLink
             v-if="
               (useFeatureFlag('billing.enabled') &&
                 (user === null || (user && workspace && !workspace.is_pro)) &&
@@ -75,7 +77,7 @@
               class="text-primary"
             >Upgrade</span>
             <span v-else>Pricing</span>
-          </NuxtLink>
+          </NuxtLink> -->
 
           <NuxtLink
             :href="helpUrl"

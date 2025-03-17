@@ -16,26 +16,26 @@
             alt="notion tools logo"
             class="w-10 h-10"
           >
-          <span class="ml-2 text-xl text-black dark:text-white"> OpnForm </span>
+          <span class="ml-2 text-xl text-black dark:text-white"> forms.Liberal.run </span>
         </router-link>
       </div>
       <div class="flex justify-center mt-5 md:mt-0">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y-2">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y">
           <a
-            :href="opnformConfig.links.feature_requests"
+            :href="opnformConfig.links.links"
             target="_blank"
             class="text-gray-600 dark:text-gray-400 transition-colors duration-300 hover:text-nt-blue"
           >
-            Feature Requests
+            Liberal.run Link-in-bio
           </a>
           <a
-            :href="opnformConfig.links.roadmap"
+            :href="opnformConfig.links.help"
             target="_blank"
             class="text-gray-600 dark:text-gray-400 transition-colors duration-300 hover:text-nt-blue"
           >
-            Roadmap
+            Help
           </a>
-          <a
+          <!-- <a
             :href="opnformConfig.links.discord"
             target="_blank"
             class="text-gray-600 dark:text-gray-400 transition-colors duration-300 hover:text-nt-blue"
@@ -48,7 +48,7 @@
             class="text-gray-600 dark:text-gray-400 transition-colors duration-300 hover:text-nt-blue"
           >
             Technical Docs
-          </a>
+          </a> -->
           <template v-if="!useFeatureFlag('self_hosted')">
             <router-link
               :to="{ name: 'privacy-policy' }"

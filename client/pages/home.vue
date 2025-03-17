@@ -44,7 +44,7 @@
             v-model="search"
             class="mb-6 px-4"
             name="search"
-            label="Search a form"
+            label="Search for a form"
             placeholder="Name of form to search"
           />
           <div

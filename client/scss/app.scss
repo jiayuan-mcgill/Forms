@@ -1,8 +1,10 @@
+@use 'fonts';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import 'fonts';
+
 
 body.dark * {
   @apply border-gray-600

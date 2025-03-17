@@ -14,7 +14,7 @@
       <div
         class="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative -mb-32 md:-mb-52 lg:-mb-72"
       >
-        <div class="flex justify-center mb-5">
+        <!-- <div class="flex justify-center mb-5">
           <div
             class="relative flex items-center shadow-sm bg-white gap-x-4 rounded-full px-4 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
           >
@@ -50,14 +50,14 @@
               </svg>
             </a>
           </div>
-        </div>
+        </div> -->
         <div class="max-w-4xl mx-auto text-center">
           <h1
             class="text-4xl sm:text-5xl lg:text-6xl font-semibold text-gray-900 tracking-tight"
           >
             Build
             <span
-              class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400"
+              class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400"
             >beautiful forms</span>
             <br>
             in seconds
@@ -66,18 +66,18 @@
             class="mt-4 sm:mt-5 text-base leading-7 sm:text-xl sm:leading-9 font-medium text-gray-500"
           >
             Create beautiful forms and share them anywhere. It's super fast, you
-            don't need to know how to code. Get started
-            <span class="font-semibold">for free</span>!
+            don't need to know how to code. 
+            <span class="font-semibold">Get Started!</span>
           </p>
 
           <div class="mt-8 flex justify-center">
             <v-button
               v-if="!authenticated"
               class="mr-1"
-              :to="{ name: 'forms-create-guest' }"
+              :to="{ name: 'login' }"
               :arrow="true"
             >
-              Create a form for FREE
+              Login
             </v-button>
             <v-button
               v-else
@@ -85,7 +85,7 @@
               :to="{ name: 'forms-create' }"
               :arrow="true"
             >
-              Create a form for FREE
+              Create a form
             </v-button>
           </div>
 
